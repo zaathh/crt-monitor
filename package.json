@@ -1,0 +1,67 @@
+{
+  "name": "zath-crt-monitor",
+  "version": "1.0.0",
+  "description": "Ultra-realistic WebGL CRT Monitor, Cathode Ray Tube & Vintage Display Effects for React",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:lib": "vite build --mode lib && tsc -p tsconfig.build.json",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build:lib"
+  },
+  "keywords": [
+    "react",
+    "crt",
+    "retro",
+    "webgl",
+    "shader",
+    "scanlines",
+    "arcade",
+    "vhs",
+    "monitor",
+    "cathode-ray-tube",
+    "pixel-art",
+    "glsl",
+    "analog"
+  ],
+  "author": "zaathh",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaathh/crt-monitor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zaathh/crt-monitor/issues"
+  },
+  "homepage": "https://github.com/zaathh/crt-monitor#readme",
+  "license": "MIT",
+  "sideEffects": false,
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.4"
+  }
+}
